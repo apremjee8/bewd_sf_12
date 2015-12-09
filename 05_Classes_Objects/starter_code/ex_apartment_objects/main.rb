@@ -1,3 +1,5 @@
+require 'pry'
+
 require_relative 'lib/building'
 require_relative 'lib/apartment'
 require_relative 'lib/person'
@@ -32,7 +34,7 @@ building.display_apartments()
 # => nil
 
 #create a renter with name, a budget, and a credit score
-steve = new Person("Steve", 1000, 650)
+steve = Person.new("Steve", 1000, 650)
 
 puts "Now Steve wants to rent an apartment."
 
@@ -42,13 +44,11 @@ puts "Now Steve wants to rent an apartment."
 #  AND
 #  * their budget is larger than the rent for the apartment
 
-puts "Steve wants to apply for Unit A2. Is he eligible?"
+puts "Steve wants to apply for Unit A2. Is he eligible? #{a2.apply_renter?(steve)}"
 #let's see if Steve can rent apartment a2?
-a2.apply_renter?(steve)
 # => false
 
-puts "Now Steve wants to apply for Unit A1. Is he eligible?"
-a1.apply_renter?(steve)
+puts "Now Steve wants to apply for Unit A1. Is he eligible? #{a1.apply_renter?(steve)}"
 # => true
 
 puts "Wonderful! Now Steve rents the apartment."
