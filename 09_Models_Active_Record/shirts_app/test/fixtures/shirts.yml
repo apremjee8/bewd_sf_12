@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+=======
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+>>>>>>> ad0b88f10b7e3e5a2045fd9325b0dbd0276fc4b3
 
 one:
   name: MyString
