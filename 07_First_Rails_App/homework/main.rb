@@ -1,5 +1,8 @@
+require 'pry'
 #iTunes!
 require_relative "lib/album"
+require_relative "lib/playlists"
+require_relative "lib/collection"
 
 #We are going to write a very basic 
 

@@ -1,0 +1,7 @@
+<% if @win%>
+	<h2> YOU WIN!</h2>
+<% else %>
+	<h2> YOU LOSE! The secret number was <%= @computer_throw%></h2>
+<% end %>
+
+<%= link_to("Back to game", rps_new_path) %>
